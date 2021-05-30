@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>SNS Paribahan</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">SNS Paribahan</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactUs.html">Profile</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Location.html">Logout</a>
+          </li>
+
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0 ">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-dark bg-light" type="button">Search</button>
+        </form>
+
+      </div>
+
+
+    </nav>
+
+  </div>
+
+  <div>
+    <img src="image/bus3.jpg" alt="Bus Photo" width="70%">
+  </div>
+
+
+  <div class="search_trip bg-light">
+    <div class="bg-light searchBoxHeader">
+      <h3>Add New Trip</h3>
+    </div>
+
+    <div class="ml-auto bg-light" style="margin: 2%">
+
+      <div class="input-group-prepend">
+        <label style="width: 25%" for="inputGroupSelect01">Source</label>
+        <select style="width: 50%" class="custom-select" id="inputGroupSelect01">
+
+          <option value="1" selected>DHAKA</option>
+          <option value="2">KHULNA</option>
+          <option value="3">RAJSHAHI</option>
+          <option value="4">SYLHET</option>
+          <option value="5">CHITTAGONG</option>
+        </select>
+
+        <label style="width: 25%" for="inputGroupSelect01">Destination</label>
+        <select style="width: 50%" class="custom-select" id="inputGroupSelect01">
+
+          <option value="1" selected>DHAKA</option>
+          <option value="2">KHULNA</option>
+          <option value="3">RAJSHAHI</option>
+          <option value="4">SYLHET</option>
+          <option value="5">CHITTAGONG</option>
+        </select>
+      </div>
+
+    </div>
+
+
+    <div class="ml-auto bg-light" style="margin: 2%">
+      <div class="input-group-prepend">
+        <label style="width: 25%" for="inputGroupSelect01">Date</label>
+        <input style="width: 50%" type="date" name="dateofjourney" id="dateofjourney">
+
+        <label style="width: 25%" for="inputGroupSelect02">Time</label>
+        <select style="width: 50%" class="custom-select" id="inputGroupSelect01">
+          <option selected>All Times</option>
+          <option value="1"> 8:00 AM to 1:00 PM</option>
+          <option value="2"> 2:00 PM to 8:00 PM </option>
+          <option value="3"> 9:00 PM to 11:00 PM </option>
+        </select>
+
+
+      </div>
+
+    </div>
+
+    <div class="ml-auto bg-light" style="margin: 2%">
+
+      <div class="input-group-prepend">
+        <label style="width: 25%" for="inputGroupSelect03">Type</label>
+        <select style="width: 50%" class="custom-select" id="inputGroupSelect03">
+
+          <option value="1" selected>AC</option>
+          <option value="2">Non AC</option>
+        </select>
+
+        <label style="width: 25%" for="inputGroupSelect01">Price</label>
+        <input style="width: 50%" class="custom-select" type="text" name="Price" value="">
+      </div>
+    </div>
+
+    <div class="ml-auto bg-light" style="margin: 2%">
+
+      <div class="input-group-prepend">
+
+        <button style="width: 32.5%" class="ml-auto btn btn-outline-dark bg-light" type="button"> ADD</button>
+      </div>
+    </div>
+
+    <br>
+    <br>
+  </div>
+
+
+
+
+
+
+
+  <h5 style="margin-left:4%">Current Trip List</h5>
+
+
+
+
+  <div class="search_trip bg-light">
+    <div class="jumbotron bg-light" style="margin-top: 30px">
+
+      <h6>Source: Dhaka</h6>
+      <h6>Destination: Khulna</h6>
+      <h6>AC</h6>
+      <h6>Departure Time: 9:00 pm</h6>
+      <h6>Departure Date: 23rd March</h6>
+      <h6>Ticket Price: 600 BDT</h6>
+
+      <p>
+
+        <button class="btn btn-outline-dark btn-light" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Edit Details
+        </button>
+      </p>
+      <div class="collapse bg-light" id="collapseExample">
+        <div class="input-group mb-3 bg-light">
+          <label for="">Source</label>
+          <input type="text" name="Source" value="">
+        </div>
+        <div class="input-group mb-3 bg-light">
+          <label for="">Destination</label>
+          <input type="text" name="Destination" value="">
+        </div>
+        <div class="input-group mb-3 bg-light">
+          <label for="">Type</label>
+          <input type="text" name="Type" value="">
+        </div>
+        <div class="input-group mb-3 bg-light">
+          <label for="">Date</label>
+          <input type="text" name="Date" value="">
+        </div>
+        <div class="input-group mb-3 bg-light">
+          <label for="">Time</label>
+          <input type="text" name="Time" value="">
+        </div>
+        <div class="input-group mb-3 bg-light">
+          <label for="">Price</label>
+          <input type="text" name="Price" value="">
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
